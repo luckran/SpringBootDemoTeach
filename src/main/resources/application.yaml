@@ -1,0 +1,26 @@
+
+name: abc
+
+person:
+  name: zhangsan #${name}
+  age: 20
+  address:
+    - beijing
+    - shanghai
+
+#对象的行内写法
+person2: { name: zhangsan ,age: 20 }
+
+#数组
+address:
+  - beijing
+  - shanghai
+
+address2: [ beijing,shanghai ]
+
+#纯量
+msg1: 'hello \n world'
+msg2: "hello \n world"
+
+
+
