@@ -11,10 +11,13 @@
 	<groupId>com.jd.test</groupId>
 	<artifactId>ccbengkaka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>ccbengkaka</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<jacoco.version>0.8.7</jacoco.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,6 +34,39 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>${junit.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>${jacoco.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>maven-artifact</artifactId>
+					<groupId>org.apache.maven</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>maven-plugin-api</artifactId>
+					<groupId>org.apache.maven</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>maven-repository-metadata</artifactId>
+					<groupId>org.apache.maven</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>plexus-component-annotations</artifactId>
+					<groupId>org.codehaus.plexus</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>plexus-utils</artifactId>
+					<groupId>org.codehaus.plexus</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 

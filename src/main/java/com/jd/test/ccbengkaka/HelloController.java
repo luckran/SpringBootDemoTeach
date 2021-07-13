@@ -60,6 +60,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello() {
+        System.out.println("开始测试");
         return "Hello";
     }
 
